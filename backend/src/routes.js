@@ -12,7 +12,7 @@ route.post('/ongs', OngController.store)
 route.get('/ongs', OngController.index)
 route.post('/incidents', IncidentController.store)
 route.get('/incidents', IncidentController.index)
-route.post('/incidents/:id', IncidentController.delete)
+route.delete('/incidents/:id', IncidentController.delete)
 route.get('/profile', ProfileController.index)
 
 module.exports = route
